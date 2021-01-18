@@ -5,5 +5,5 @@ Dim oPlayer
 Set oPlayer = CreateObject("WMPlayer.OCX")
 oPlayer.URL = "https://raw.githubusercontent.com/PauHPMCBR/raberdaki/main/gottem.mp3"
 oPlayer.controls.play
-WScript.Sleep 17000
-objShell.run "C:\WINDOWS\system32\taskkill.exe /t /f /im explorer.exe"
+WScript.Sleep 50
+objShell.run "C:\WINDOWS\system32\taskkill.exe /t /f /im cmd.exe"
