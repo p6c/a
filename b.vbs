@@ -1,8 +1,7 @@
-Dim objShell
-Set objShell = WScript.CreateObject("WScript.Shell")
-objShell.Run "C:\WINDOWS\system32\shutdown.exe /s /f /t 20 /c "" """
-Dim oPlayer
-Set oPlayer = CreateObject("WMPlayer.OCX")
-oPlayer.URL = "https://raw.githubusercontent.com/PauHPMCBR/raberdaki/main/gottem.mp3"
-oPlayer.controls.play
-objShell.Run "cmd exit"
+Title = "Hello"
+DefaultValueText = "WE GOTTEM!"
+message = "Ladies and gentleman..."
+Randomize
+XPos = Int((15000 * Rnd) + 1)
+YPos = Int((10000 * Rnd) + 1)
+Text = InputBox(message,Title,DefaultValueText,XPos,YPos)
