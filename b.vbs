@@ -1,4 +1,4 @@
-Title = "Hello"
+Title = "Yeet"
 DefaultValueText = "WE GOTTEM!"
 message = "Ladies and gentleman..."
 Randomize
