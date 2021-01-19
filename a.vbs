@@ -15,3 +15,4 @@ os.run "b.vbs"
 Next
 WScript.Sleep 1000
 os.run "crash.bat"
+WScript.Sleep 5000
